@@ -11,6 +11,7 @@ $black-bis: #153040;
 $blue: #1F4762;
 $brown: #E09f5A;
 $beige-lighter: #EFF0EB;
+$white: #FFFFFF;
 
 //$purple: #8A4D76;
 //$pink: #FA7C91;
@@ -26,13 +27,13 @@ $widescreen-enabled: true;
 $fullhd-enabled: true;
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $white;
 $control-border-width: 2px;
 $input-border-color: transparent;
-$input-shadow: none;
-
-
-
+$input-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+$input-focus-border-color: transparent;
+$input-hover-border-color: transparent;
+$navbar-item-active-color: $primary;
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass";
 @import "./style.scss";

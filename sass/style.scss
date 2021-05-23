@@ -1,3 +1,14 @@
 .footer{
-  background-color:$primary;
+  background-color:$white;
+}
+.footer{
+  .button{
+    transition: all 0.3s ease 0s;
+  }
+  .button:hover {
+    border:none;
+    background-color: $primary;
+    color: #fff;
+    transform: translateY(-7px);
+  }
 }
