@@ -1,14 +1,40 @@
 .footer{
   background-color:$white;
 }
-.footer{
-  .button{
+.footer {
+  .button {
     transition: all 0.3s ease 0s;
   }
+
   .button:hover {
-    border:none;
+    border: none;
     background-color: $primary;
     color: #fff;
     transform: translateY(-7px);
   }
+}
+.--plyr-color-main{
+  color: $primary;
+}
+
+.plyr--full-ui input[type=range] {
+  color: $primary;
+}
+
+.plyr__control--overlaid {
+  background: rgba(255,198,25, .8);
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+  background: $primary;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba(255,198,25, .5);
+}
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+  background: $primary;
 }
