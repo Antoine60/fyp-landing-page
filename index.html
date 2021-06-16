@@ -94,19 +94,19 @@
     </div>
     <div class="container is-flex is-justify-content-center mt-6">
         <div style="width:240px; height:420px;">
-            <div class="image is-3by5 player" style="width:100% !important; height:100% !important;">
+            <div class="image is-3by5 player-portfolio" style="width:100% !important; height:100% !important;">
                 <iframe allowfullscreen class="has-ratio"
                         frameborder="0" src="https://player.vimeo.com/video/556572755"></iframe>
             </div>
         </div>
         <div class="mx-6" style="width:240px; height:420px;">
-            <div class="image is-3by5 player" style="width:100% !important; height:100% !important;">
+            <div class="image is-3by5 player-portfolio" style="width:100% !important; height:100% !important;">
                 <iframe allowfullscreen
                         frameborder="0" src="https://player.vimeo.com/video/556572755"></iframe>
             </div>
         </div>
         <div style="width:240px; height:420px;">
-            <div class="image is-3by5 player" style="width:100% !important; height:100% !important;">
+            <div class="image is-3by5 player-portfolio" style="width:100% !important; height:100% !important;">
                 <iframe allowfullscreen class="has-ratio"
                         frameborder="0" src="https://player.vimeo.com/video/556572755"></iframe>
             </div>
@@ -221,7 +221,7 @@
     <div class="container">
                 <h2 class="title has-text-black-bis">Produksi</h2>
                 <div class="columns">
-                    <div class="is-one-third column">
+                    <div class="is-one-quarter column">
                         <div class="is-flex is-flex-direction-column">
                             <div class="is-flex is-flex-direction-row is-align-items-center">
                                 <figure class="image">
@@ -239,7 +239,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="is-one-third column">
+                    <div class="is-one-quarter column">
                         <div class="is-flex is-flex-direction-column">
                             <div class="is-flex is-flex-direction-row is-align-items-center">
                                 <figure class="image">
@@ -445,20 +445,24 @@
                 Jakarta 10350<br>
             </p>
             <div class="mt-3 social-networks is-size-4 has-text-black">
-                <a class="is-link" href="https://www.youtube.com/channel/UCV2rHLHjJ7tDzR6padqrOrw">
+                <a class="is-link px-2" href="https://www.youtube.com/channel/UCV2rHLHjJ7tDzR6padqrOrw">
             <span class="icon">
               <i class="fab fa-youtube"></i>
             </span>
                 </a>
-                <a class="is-link px-4" href="https://www.instagram.com/foryourpersonally">
+                <a class="is-link px-2" href="https://www.instagram.com/foryourpersonally">
                 <span class="icon">
               <i class="fab fa-instagram"></i>
             </span>
                 </a>
-                <a class="is-link" href="https://twitter.com/FYP______?s=08">
-
+                <a class="is-link px-2" href="https://twitter.com/FYP______?s=08">
                 <span class="icon">
               <i class="fab fa-twitter"></i>
+            </span>
+                </a>
+                <a class="is-link px-2" href="https://vt.tiktok.com/ZSJa375M5/">
+                <span class="icon">
+              <i class="fab fa-tiktok"></i>
             </span>
                 </a>
             </div>
@@ -473,6 +477,7 @@
 <script src="js/plyr.js"></script>
 <script>
     const players = Array.from(document.querySelectorAll('.player')).map(p => new Plyr(p));
+    const playersPortoflio = Array.from(document.querySelectorAll('.player-portfolio')).map(p => new Plyr(p, {hideControls:true}));
 </script>
 <script src="js/main.js"></script>
 
